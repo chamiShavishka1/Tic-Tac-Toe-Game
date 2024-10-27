@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse68.controller.CreatePlayerController">
+   <children>
+      <Label layoutX="231.0" layoutY="96.0" text="Tic Tac Toe">
+         <font>
+            <Font name="Arial Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="112.0" layoutY="128.0" text="Welcome to Tic Tac Toe, Please enter your name to create a new player" />
+      <Label layoutX="201.0" layoutY="177.0" text="Enter your name" textFill="#192ac7">
+         <font>
+            <Font name="Arial Bold" size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtName" layoutX="110.0" layoutY="236.0" prefHeight="39.0" prefWidth="378.0">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </TextField>
+      <JFXButton fx:id="btnPlay" buttonType="RAISED" layoutX="250.0" layoutY="307.0" onAction="#btnPlayOnAction" ripplerFill="#1c2cb9" style="-fx-background-color: blue; -fx-text-fill: white; -fx-font-size: 25; -fx-font-weight: bold;" text="Play !" />
+      <Label layoutX="59.0" layoutY="440.0" text="Copyright © 2024 GDSE. All Rights Reserved. This project is licensed under the MIT license." />
+   </children>
+</AnchorPane>
